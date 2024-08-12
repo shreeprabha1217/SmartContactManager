@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<title>About</title>
+</head>
+<body>
+<section>
+<!-- Add icon library -->
+<div class="profile_card">
+  <img src="#" th:src="@{'/img/'+${user.imageUrl}}" alt="Profile_image" style="width:100%">
+  <h1><span th:text="${user.name}"></span></h1>
+  <p class="profile_title"><span th:text="${user.role}"></span></p>
+  <p th:text="${user.about}"></p>
+   <p>Account Enabled:<span th:text="${user.enabled}"></span>
+  <p><span class="profile_button" th:text="${user.email}" ></span></p>
+ 
+</div>
+<script>
+$(document).ready(()=>{
+	$('.item').removeClass('active');
+	$("#profile-link").addClass("active");
+});
+</script>
+</section>
+</body>
+</html>

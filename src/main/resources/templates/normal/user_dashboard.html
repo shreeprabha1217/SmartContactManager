@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="UTF-8">
+<title>About</title>
+</head>
+<body class="profile_body">
+<section>
+<div class="container">
+<div class="card">
+<div class="card-body ">
+<div class="container">
+<img src="" style="height:500px; width:1050px;" class="my_profile_photo" th:src="@{'/img/contact_logo.jpg'}" alt="Profile_image"/>
+</div>
+<h1 class="text-center mt-4 text-secondary font-italic">Start adding your contact on cloud</h1>
+<a th:href="@{/user/add_contact}" class="btn btn-primary btn-block text-uppercase mt-3">Add New Contact</a>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(()=>{
+	$('.item').removeClass('active');
+	$("#home-link").addClass("active");
+});
+</script>
+</section>
+</body>
+</html> 

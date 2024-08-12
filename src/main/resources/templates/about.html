@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .key-features {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+
+        .feature-list li::before {
+            content: "• ";
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+<section class="container mt-5">
+    
+    <p>
+        Welcome to <span class="highlight">Smart Contact Manager</span> – your ultimate solution for efficient and secure contact management. Designed and built with the robustness of Java Spring Boot, Smart Contact Manager offers a seamless and intuitive platform to save, organize, and access all your contacts effortlessly.
+    </p>
+    <p class="key-features">Key Features:</p>
+    <ul class="feature-list">
+        <li>User-Friendly Interface <span class="emoji">🎨</span>: Navigate through a clean, modern, and intuitive interface that simplifies contact management.</li>
+        <li>Secure Data Handling <span class="emoji">🔒</span>: Ensure your contact information is secure with industry-standard security practices.</li>
+        <li>Effortless Organization <span class="emoji">🗂️</span>: Categorize and organize your contacts with ease, making it simple to find who you need, when you need them.</li>
+        <li>Advanced Search <span class="emoji">🔍</span>: Quickly locate contacts using powerful search and filter capabilities.</li>
+        <li>Responsive Design <span class="emoji">📱</span>: Access your contacts on any device, anywhere, with a fully responsive design.</li>
+    </ul>
+    <p class="highlight">Built with Spring Boot <span class="emoji">🌟</span>:</p>
+    <p>
+        Harnessing the power of Java Spring Boot, Smart Contact Manager delivers a high-performance, scalable, and reliable solution for both individual and professional use. Spring Boot’s extensive ecosystem and community support ensure continuous improvements and feature enhancements.
+    </p>
+    <p class="highlight">Why Smart Contact Manager?</p>
+    <p>
+        In today's fast-paced world, staying connected is more important than ever. Smart Contact Manager empowers you to maintain your network with ease, giving you the tools to manage your contacts efficiently and effectively. Whether you're a business professional, an entrepreneur, or someone who values organization, Smart Contact Manager is designed to meet your needs.
+    </p>
+    <p>
+        Join us on this journey to smarter contact management and experience the future of managing your connections with Smart Contact Manager. <span class="emoji">🚀✨</span>
+    </p>
+</section>
+</body>
+</html>
